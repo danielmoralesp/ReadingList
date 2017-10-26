@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171024220427) do
+ActiveRecord::Schema.define(version: 20171026210636) do
 
   create_table "books", force: :cascade do |t|
     t.string   "title"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20171024220427) do
     t.integer  "rating"
     t.string   "finished_on"
     t.string   "date"
+    t.text     "keywords"
   end
 
 end
